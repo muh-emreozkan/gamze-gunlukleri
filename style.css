@@ -1,0 +1,141 @@
+:root {
+    --primary-color: #ff7eb9;
+    --secondary-color: #ff65a3;
+    --background-color: #fff0f6;
+    --text-color: #333;
+    --white: #ffffff;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 40px;
+    overflow: hidden;
+}
+
+.decor-left,
+.decor-right {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.decor-left {
+    left: -50px;
+    background-image: url('assets/decor-left.png');
+}
+
+.decor-right {
+    right: -50px;
+    background-image: url('assets/decor-right.png');
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#current-date {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+.new-entry {
+    margin-bottom: 30px;
+}
+
+#new-post {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    font-size: 1rem;
+    resize: none;
+    margin-bottom: 15px;
+}
+
+#add-post {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-post:hover {
+    background-color: var(--secondary-color);
+}
+
+#posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post {
+    background-color: var(--white);
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+}
+
+.post-date {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    white-space: pre-wrap;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .decor-left,
+    .decor-right {
+        display: none;
+    }
+}

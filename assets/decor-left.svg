@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 800">
+  <!-- Heart pattern -->
+  <path fill="#ff7eb9" d="M50 100c0-27.6-22.4-50-50-50v100c27.6 0 50-22.4 50-50z" transform="rotate(-45 25 75)"/>
+  <path fill="#ff7eb9" d="M50 300c0-27.6-22.4-50-50-50v100c27.6 0 50-22.4 50-50z" transform="rotate(-45 25 275)"/>
+  
+  <!-- Flower pattern -->
+  <circle cx="30" cy="500" r="15" fill="#ff65a3"/>
+  <circle cx="30" cy="500" r="10" fill="#fff"/>
+  <circle cx="30" cy="500" r="5" fill="#ff65a3"/>
+  
+  <circle cx="70" cy="600" r="15" fill="#ff7eb9"/>
+  <circle cx="70" cy="600" r="10" fill="#fff"/>
+  <circle cx="70" cy="600" r="5" fill="#ff7eb9"/>
+</svg>
